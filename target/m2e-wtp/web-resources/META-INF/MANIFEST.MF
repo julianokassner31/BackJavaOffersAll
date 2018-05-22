@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Offers All
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: kassner
+Implementation-Vendor-Id: br.com.offersall
+Build-Jdk: 1.8.0_151
+Implementation-URL: http://projects.spring.io/spring-boot/offersal/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,29 @@
+@RestController : Em primeiro lugar, estamos usando a nova anotação do @RestController da Spring 4. 
+Esta anotação elimina a necessidade de anotar cada método com @ResponseBody. 
+Sob o capô, @RestController é anotado com @ResponseBody e pode ser considerado como combinação de @Controller e @ResponseBody.
+
+@RequestBody : Se um parâmetro de método for anotado com @RequestBody, 
+a Spring irá vincular o corpo de solicitação HTTP recebido (para o URL mencionado em @RequestMapping para esse método)
+para esse parâmetro. Ao fazer isso, a Primavera [behind the scenes] usará conversores de mensagens HTTP
+para converter o corpo de solicitação HTTP em objeto de domínio [deserializar corpo de solicitação para objeto de domínio], 
+com base em ACCEPT ou no cabeçalho de tipo de conteúdo presente na solicitação.
+
+@ResponseBody : Se um método for anotado com @ResponseBody, Spring irá vincular o valor de retorno ao corpo de resposta 
+HTTP de saída. Ao fazer isso, a Primavera [behind the scenes] usará conversores de mensagens HTTP para converter 
+o valor de retorno para o corpo de resposta HTTP [serializar o objeto para o corpo de resposta], com base 
+no tipo de conteúdo presente no cabeçalho de HTTP de solicitação. 
+Como já mencionado, na Primavera 4, você pode parar de usar esta anotação.
+
+ResponseEntidade é um verdadeiro negócio. Representa a resposta HTTP completa. 
+A coisa boa é que você pode controlar qualquer coisa que ocorra. Você pode especificar o código de status, cabeçalhos e corpo. 
+Ele vem com vários construtores para transportar as informações que você deseja enviar na Resposta HTTP.
+
+@PathVariable Esta anotação indica que um parâmetro de método deve ser vinculado a uma variável de modelo de URI [o que está em '{}'].
+
+
+
+#################### Ideias a se pensar ########################
+criar um agendamento de Ofertas
+oferta relampago - quando é criado uma orferta de curto periodo lancar um splash para o usuario
+
+
